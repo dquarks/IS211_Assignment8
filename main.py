@@ -162,7 +162,6 @@ def main(type1, type2, game_type=False):
         if(game_type == False):
             players.start_normal()
         else:
-            print('Playing timed')
             players.start_timed()
 
 if len(sys.argv) <= 2:
