@@ -148,14 +148,14 @@ def main(type1, type2, game_type=False):
     elif(type1.lower() == 'computer'):
         val1 = False
     else:
-        print('Error unknown player 1 type!')
+        print('Error: unknown player 1 type!')
 # ----->
     if(type2.lower() == "human"):
         val2 = True
     elif(type2.lower() == "computer"):
         val2 = False
     else:
-        print('Error unknown player 2 type!')
+        print('Error: unknown player 2 type!')
 
     if(val1 != -1 and val2 != -1):
         players = PlayerFactory(val1, val2)
@@ -175,4 +175,4 @@ arg = parser.parse_args()
 try:
     main(arg.player1,arg.player2,arg.timed)
 except Exception as exception:
-    print(str(exception))
+    print('Error: ' + str(exception))
