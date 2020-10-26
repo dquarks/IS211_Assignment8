@@ -65,7 +65,7 @@ class Player:
                     if turn_total > 25 and turn_total < (100 - turn_total):
                         replay = 'h'
                     else:
-                        print('Machine rolls again')
+                        print('{} rolls again'.format(self.name))
             elif replay == 'h':
                 self.score += turn_total
                 print('\n{}\'s turn total was added to player score.'.format(self.name))
