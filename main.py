@@ -141,7 +141,6 @@ class PlayerFactory:
         game.play()
 
 def main(type1, type2, game_type=False):
-    print('Working: {} {}'.format(str(type1), str(type2)))
     val1 = -1
     val2 = -1
     if(type1.lower() == 'human'):
